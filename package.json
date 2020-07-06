@@ -6,7 +6,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
-    "react-scripts": "1.1.4",
+    "react-scripts": "^3.4.1",
     "redux": "^4.0.0",
     "redux-saga": "^0.16.0"
   },
@@ -18,5 +18,17 @@
   },
   "devDependencies": {
     "prettier": "^1.14.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
