@@ -1,4 +1,4 @@
-import { Images } from '../components';
+import { Images } from '../constants';
 
 const loadImages = () => ({
     type: Images.LOAD,
