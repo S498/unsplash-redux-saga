@@ -1,6 +1,7 @@
 import imagesSaga from './imagesSaga';
+import statsSaga from './statsSaga';
+import { all } from 'redux-saga/effects';
 // function* handleImagesLoad() {
-//     console.log('fetching images from unsplash');
 // }
 // //Watcher Saga
 // function* rootSaga() {
@@ -9,4 +10,8 @@ import imagesSaga from './imagesSaga';
 
 // export default rootSaga;
 
-export default imagesSaga;
+function* rootSaga() {
+    yield all([imagesSaga(), statsSaga()]);
+}
+
+export default rootSaga;
